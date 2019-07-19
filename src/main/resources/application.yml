@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    jdbc-url: jdbc:mysql://47.107.244.123:3006/dbtest?characterEncoding=utf-8
+    slave1:
+      username: root
+      password: 123456
+      jdbc-url: jdbc:mysql://47.107.244.123:3106/dbtest?characterEncoding=utf-8
+    slave2:
+      username: root
+      password: 123456
+      jdbc-url: jdbc:mysql://47.107.244.123:3206/dbtest?characterEncoding=utf-8
+server:
+  port: 8888
